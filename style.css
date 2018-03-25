@@ -1,0 +1,107 @@
+@charset "UTF-8";
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: '游ゴシック', YuGothic, 'メイリオ', Verdana, 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
+    font-size: 1.4rem;
+    line-height: 1.6;
+    letter-spacing: .1em;
+    color: #4c4c4c;
+    background-color: #fdfcf6;
+}
+
+.photo {
+    background-image: url("image/photo.jpg");
+    height: 500px;
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+}
+
+@media(max-width:768px){
+    .photo {
+        height: 250px;        
+    }
+}
+
+.text {
+    display: block;
+    width: 90%;
+    margin: 30px auto;
+    text-align: center;
+}
+
+@media(max-width:768px){
+    .text {
+        text-align: left;
+    }
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+@media(max-width:768px){
+    .container {
+        flex-direction: column;
+    }
+}
+
+.box {
+    background-color: #E4DACD;
+    margin: 10px;
+    flex: 1;
+}
+
+.box h1{
+    background-color: #C6B3A3;
+    text-align: center;
+    font-weight: bold;
+    padding: 5px;
+}
+
+.box p{
+    padding: 10px;
+    border-top: solid 1px #fff;
+}
+
+.button{
+    background-color: #E4DACD;
+    text-align: center;
+    padding: 20px;
+    margin-top: 25px;
+    margin-bottom: 0px;
+}
+
+.button a{
+    display: block;
+    text-decoration: none;
+    background-color: #C6B3A3;
+    border-radius: 5px;
+    padding: 10px;
+    width: 20%;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #fff;
+}
+
+.button a:hover{
+    background-color: #BEB098;
+}
+
+
+@media(max-width:768px){
+    .button a{
+        text-decoration: underline;
+        width: 35%;
+    }
+    
+    .button a:hover{
+        background-color: #C6B3A3;
+    }
+}
